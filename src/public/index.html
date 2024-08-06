@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Placa OCR</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Reconhecimento de Placas</h1>
+
+    <form id="uploadForm">
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="foto">Foto da Placa:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" required>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Consulta de Placa</h2>
+    <form id="consultaForm">
+      <label for="placa">Número da Placa:</label>
+      <input type="text" id="placa" name="placa" required>
+      <button type="submit">Consultar</button>
+    </form>
+
+    <h2>Relatório por Cidade</h2>
+    <form id="relatorioForm">
+      <label for="cidadeRelatorio">Cidade:</label>
+      <input type="text" id="cidadeRelatorio" name="cidadeRelatorio" required>
+      <button type="submit">Gerar Relatório</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
